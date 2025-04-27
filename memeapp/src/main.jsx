@@ -8,3 +8,5 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+
+// this from vite itself
