@@ -131,7 +131,10 @@ function MemeDisplay() {
         setComments(prev => ({ ...prev, [url]: text }));
     };
 
-
+ // Function to toggle reaction on a meme
+    const toggleReaction = (url) => {
+        setReaction(prev => ({ ...prev, [url]: !prev[url] }));
+    };
 
 
 
