@@ -115,7 +115,17 @@ function MemeDisplay() {
         setRandomMeme(random);
     };
 
-
+ // Function to handle uploading a custom meme
+    const handleUpload = () => {
+        if (uploadUrl.trim()) {
+            const customMeme = {
+                title: 'Custom Meme',
+                url: uploadUrl
+            };
+            setCustomMemes(prev => [...prev, customMeme]);
+            setUploadUrl('');
+        }
+    };
 
 
 
