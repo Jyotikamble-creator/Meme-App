@@ -1,63 +1,3 @@
-
-// import React, { useState, useEffect } from "react";
-
-// // function to display the memes
-// function MemeDisplay() {
-//     const [meme, setMemes] = useState([]);
-//     const [loading, setLoading] = useState(true);
-//     const [searchTerm, setSearchTerm] = useState('');
-
-
-//     // hook to fetch the memes from the API
-//     useEffect(() => {
-//         async function fetchMeme() {
-//             try {
-//                 const response = await fetch("https://meme-api.com/gimme/50");
-//                 const data = await response.json();
-//                 // json data
-
-//                 console.log(data);
-//                 setMemes(data.memes);
-//                 setLoading(false);
-//                 // set the loading to false when the data is fetched
-
-//             } catch (error) {
-//                 console.error("Error fetching memes:", error);
-//             }
-//         }
-//         fetchMeme();
-//     }, [])
-//     // query
-
-//     // if the data is not fetched then return the loading state
-//     if (loading) {
-//         return <div>Loading...</div>;
-//     }
-
-//     // result of the data fetched from the API
-//     return (
-
-
-
-//         <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">{meme.map((meme, index) => (
-//             <div className="bg-white p-4 rounded-lg shadow-lg" key={index}>
-//                 {/* params */}
-//                 <h2 className="text-lg font-semibold mb-2">{meme.title}</h2>
-//                 <img className="rounded-md w-full object-cover" src={meme.url} alt={meme.title} />
-//             </div>))}
-//         </div>
-//     )
-
-// }
-
-// export default MemeDisplay;
-
-
-// <div className="mb-4 flex justify-center">
-
-// </div>
-
-
 // here the data is fetched from the API and displayed
 // importing the hooks and React state
 import React, { useEffect, useState } from 'react';
@@ -90,6 +30,7 @@ function MemeDisplay() {
     //   State for count to load more memes
     const [count, setCount] = useState(20);
 
+    // useEffect to fetch memes when the component mounts or count changes
     useEffect(() => {
         fetchMemes();
     }, [count]);
@@ -108,14 +49,14 @@ function MemeDisplay() {
         }
     };
 
-// Function to get a random meme from the  combined list of memes and custom memes
+    // Function to get a random meme from the  combined list of memes and custom memes
     const getRandomMeme = () => {
         const allMemes = [...memes, ...customMemes];
         const random = allMemes[Math.floor(Math.random() * allMemes.length)];
         setRandomMeme(random);
     };
 
- // Function to handle uploading a custom meme
+    // Function to handle uploading a custom meme
     const handleUpload = () => {
         if (uploadUrl.trim()) {
             const customMeme = {
@@ -126,16 +67,16 @@ function MemeDisplay() {
             setUploadUrl('');
         }
     };
-  // Function to add a comment to a meme
+
+    // Function to add a comment to a meme
     const addComment = (url, text) => {
         setComments(prev => ({ ...prev, [url]: text }));
     };
 
- // Function to toggle reaction on a meme
+    // Function to toggle reaction on a meme
     const toggleReaction = (url) => {
         setReaction(prev => ({ ...prev, [url]: !prev[url] }));
     };
-
 
     // Currently searchTerm filters automatically
     // This function can be used to trigger search explicitly if needed
@@ -146,11 +87,10 @@ function MemeDisplay() {
         m.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
-
-// Function to render(display) each meme card
+    // Function to render(display) each meme card
     const renderMemeCard = (meme, index) => (
-
         <div className="bg-white p-4 rounded shadow-md" key={index}>
+
             {/* Displaying the meme title and image */}
             <h2 className="text-lg font-bold mb-2">{meme.title}</h2>
             <img src={meme.url} alt={meme.title} className="rounded w-full mb-2" />
@@ -192,20 +132,11 @@ function MemeDisplay() {
         </div>
     );
 
-
-
-
-
-
-
-
-
-    
     // Main component return
     return (
         <div className="max-w-6xl mx-auto p-4">
             <h1 className="text-3xl font-bold text-center mb-6"></h1>
-<div className="mb-4 flex flex-col md:flex-row gap-4 items-center">
+            <div className="mb-4 flex flex-col md:flex-row gap-4 items-center">
                 {/* Uploading(write) a custom meme */}
                 <input
                     type="text"
@@ -230,8 +161,7 @@ function MemeDisplay() {
                     Random Meme
                 </button>
             </div>
-            
-            
+
             <div className="mb-4 flex flex-col md:flex-row gap-8 items-center">
                 {/* Search bar */}
                 <div className="mb-4 flex justify-center">
@@ -252,7 +182,6 @@ function MemeDisplay() {
                 </div>
             </div>
 
-
             {/* Displaying the random meme if available */}
             {randomMeme && (
                 <div className="bg-yellow-100 border border-yellow-300 p-4 mb-6 rounded">
@@ -270,6 +199,7 @@ function MemeDisplay() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                         {filteredMemes.map(renderMemeCard)}
                     </div>
+
                     <div className="flex justify-center mt-6">
                         {/* Button to load more memes */}
                         <button
