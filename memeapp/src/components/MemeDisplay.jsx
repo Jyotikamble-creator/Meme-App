@@ -205,7 +205,31 @@ function MemeDisplay() {
     return (
         <div className="max-w-6xl mx-auto p-4">
             <h1 className="text-3xl font-bold text-center mb-6"></h1>
+<div className="mb-4 flex flex-col md:flex-row gap-4 items-center">
+                {/* Uploading(write) a custom meme */}
+                <input
+                    type="text"
+                    placeholder="Paste image URL to upload"
+                    className="p-2 border rounded w-full md:w-1/2"
+                    value={uploadUrl}
+                    onChange={(e) => setUploadUrl(e.target.value)}
+                />
+                {/* Button to upload a custom meme */}
+                <button
+                    onClick={handleUpload}
+                    className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+                >
+                    Upload Meme
+                </button>
 
+                {/* Button to get a random meme */}
+                <button
+                    onClick={getRandomMeme}
+                    className="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600 "
+                >
+                    Random Meme
+                </button>
+            </div>
             
                 </>
             )}
