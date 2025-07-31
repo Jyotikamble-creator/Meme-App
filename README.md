@@ -18,14 +18,37 @@ A fun and responsive meme viewer and uploader built with **React**, **Tailwind C
 ## ✨ Features
 
 - 🔍 **Search Memes** by title
-- 🎲 **Random Meme** generator
+-  🧩**Random Meme** generator
 - 💬 **Add Comments** to each meme
 - ❤️ **Like/Reactions** (❤️ / 🤍 toggle)
 - 📤 **Upload Your Own Memes** using image URLs
-- 💾 **Download Memes**
+- ⬇️ **Download Memes**
 - 🔄 **Load More** memes on button click
 - 🎨 **Responsive UI** with TailwindCSS
 
+## 📁 Folder Structure
+
+```
+├── public/
+├── src/
+│    ├──assests
+│    ├──components/
+│    │    ├── MemeDisplay.jsx   # Main logic for meme display & interaction
+│    ├──App.css
+│    ├──App.jsx
+│    ├──index.css
+│    ├──main.jsx
+├──.env
+├──gitignore
+├──eslint.config.js
+├──index.html
+├──package-lock.jscon
+├──package.json
+├──README.md
+├──vite.config.js
+└── README.md
+
+````
 
 
 ## 🚀 Getting Started
