@@ -63,7 +63,7 @@ A fun, interactive, and responsive meme generator and viewer built with **React*
 - 🎨 [TailwindCSS](https://tailwindcss.com/) – for styling
 - 🔗 [MEME API](https://meme-api.com/gimme/) – meme content provider
 ---
-## ScreenShots
+## 📸 Demo Preview
 
 ---
 ## 🚀 Getting Started
