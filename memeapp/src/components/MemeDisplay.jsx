@@ -126,7 +126,10 @@ function MemeDisplay() {
             setUploadUrl('');
         }
     };
-
+  // Function to add a comment to a meme
+    const addComment = (url, text) => {
+        setComments(prev => ({ ...prev, [url]: text }));
+    };
 
 
 
