@@ -34,7 +34,7 @@ A fun and responsive meme viewer and uploader built with **React**, **Tailwind C
 
 ## 📁 Folder Structure
 
-```
+````
 ├── public/
 ├── src/
 │    ├──assests
@@ -56,8 +56,11 @@ A fun and responsive meme viewer and uploader built with **React**, **Tailwind C
 
 ````
 ---
-## Teck Stack
+
+## 🧰 Teck Stack
 
 - [React+vite](https://vite.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [MEME API](https://meme-api.com/gimme/)
 ---
 
