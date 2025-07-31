@@ -137,6 +137,14 @@ function MemeDisplay() {
     };
 
 
+    // Currently searchTerm filters automatically
+    // This function can be used to trigger search explicitly if needed
+    const handleSearch = () => {
+        console.log('Searching memes for:', searchTerm);
+    };
+    const filteredMemes = [...customMemes, ...memes].filter(m =>
+        m.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
 
 
