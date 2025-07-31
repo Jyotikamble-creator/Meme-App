@@ -108,6 +108,31 @@ function MemeDisplay() {
         }
     };
 
+// Function to get a random meme from the  combined list of memes and custom memes
+    const getRandomMeme = () => {
+        const allMemes = [...memes, ...customMemes];
+        const random = allMemes[Math.floor(Math.random() * allMemes.length)];
+        setRandomMeme(random);
+    };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     // Main component return
     return (
