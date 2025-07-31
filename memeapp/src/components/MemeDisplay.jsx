@@ -147,7 +147,50 @@ function MemeDisplay() {
     );
 
 
+// Function to render(display) each meme card
+    const renderMemeCard = (meme, index) => (
 
+        <div className="bg-white p-4 rounded shadow-md" key={index}>
+            {/* Displaying the meme title and image */}
+            <h2 className="text-lg font-bold mb-2">{meme.title}</h2>
+            <img src={meme.url} alt={meme.title} className="rounded w-full mb-2" />
+
+            {/* Reaction and download button for each meme */}
+            <div className="flex justify-between items-center">
+                <button
+                    onClick={() => toggleReaction(meme.url)}
+                    className={`text-xl ${reaction[meme.url] ? 'text-red-500' : 'text-gray-400'}`}
+                >
+                    {reaction[meme.url] ? '❤️' : '🤍'}
+                </button>
+
+                {/* Download button */}
+                <a
+                    href={meme.url}
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 text-sm hover:underline"
+                >
+                    Download
+                </a>
+            </div>
+
+            {/* Adding comments */}
+            <div className="mt-2">
+                <input
+                    type="text"
+                    placeholder="Add a comment..."
+                    className="w-full p-1 border rounded"
+                    value={comments[meme.url] || ''}
+                    onChange={(e) => addComment(meme.url, e.target.value)}
+                />
+                {comments[meme.url] && (
+                    <p className="text-sm text-gray-600 mt-1">😁 {comments[meme.url]}</p>
+                )}
+            </div>
+        </div>
+    );
 
 
 
