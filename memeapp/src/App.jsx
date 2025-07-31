@@ -9,8 +9,8 @@ import MemeDisplay from './components/MemeDisplay';
 function App() {
   return (
     <>
-      <div className=' p-6  flex flex-col items-center bg-gray-500'>
-        <h1 className='text-3xl text-white  font-bold  mb-8'>THIS IS MEME WORLD</h1>
+      <div className=' p-6  flex flex-col items-center bg-gray-400'>
+        <h1 className='text-3xl text-white  font-bold  mb-8'> MEME WORLD</h1>
         <MemeDisplay />
       </div>
     </>
