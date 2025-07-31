@@ -21,14 +21,14 @@ A fun and responsive meme viewer and uploader built with **React**, **Tailwind C
 
 ## ✨ Features
 
-- 🔍 **Search Memes** by title
--  🧩**Random Meme** generator
-- 💬 **Add Comments** to each meme
-- ❤️ **Like/Reactions** (❤️ / 🤍 toggle)
-- 📤 **Upload Your Own Memes** using image URLs
-- ⬇️ **Download Memes**
-- 🔄 **Load More** memes on button click
-- 🎨 **Responsive UI** with TailwindCSS
+- 🔍 **Search Memes** by title.
+-  🧩**Random Meme** generator.
+- 💬 **Add Comments** to each meme.
+- ❤️ **Like/Reactions** (❤️ / 🤍 toggle).
+- 📤 **Upload Your Own Memes** using image URLs.
+- ⬇️ **Download Memes** a button is present.
+- 🔄 **Load More** memes on button click.
+- 🎨 **Responsive UI** with TailwindCSS.
 
 ---
 
@@ -88,3 +88,6 @@ npm run dev
 The app will open at http://localhost:5173 (or another port if 5173 is in use).
 
 ---
+## 🙌 Contribution
+
+Feel free to fork this repo and submit a PR with improvements  memes are meant to be shared! 😄
