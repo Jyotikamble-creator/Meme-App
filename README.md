@@ -65,9 +65,26 @@ A fun and responsive meme viewer and uploader built with **React**, **Tailwind C
 ---
 
 ## 🚀 Getting Started
+
+### 1. Clone the Repo
 ```bash
 git clone https://github.com/Jyotikamble-creator/Meme-App.git
 
 cd memeapp
 ```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3.Start the App
+
+```bash
+npm run dev
+```
+
+The app will open at http://localhost:5173 (or another port if 5173 is in use).
+
 ---
