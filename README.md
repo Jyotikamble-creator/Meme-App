@@ -64,3 +64,10 @@ A fun and responsive meme viewer and uploader built with **React**, **Tailwind C
 - [MEME API](https://meme-api.com/gimme/)
 ---
 
+## 🚀 Getting Started
+```bash
+git clone https://github.com/Jyotikamble-creator/Meme-App.git
+
+cd memeapp
+```
+---
