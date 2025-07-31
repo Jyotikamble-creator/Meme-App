@@ -15,7 +15,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 # 😂 Meme Generator App
 
-A fun and responsive meme viewer and uploader built with **React**, **Tailwind CSS**, and the [Meme API](https://meme-api.com/).
+A fun, interactive, and responsive meme generator and viewer built with **React**,**Tailwind CSS**, and powered by the **Meme API**. Upload your own memes, explore trending ones, search by keyword, react with ❤️, and even download your favorites!
 
 ---
 
@@ -35,35 +35,37 @@ A fun and responsive meme viewer and uploader built with **React**, **Tailwind C
 ## 📁 Folder Structure
 
 ````
-├── public/
+├── public/                     #root of your project
 ├── src/
-│    ├──assests
-│    ├──components/
-│    │    ├── MemeDisplay.jsx   # Main logic for meme display & interaction
-│    ├──App.css
-│    ├──App.jsx
-│    ├──index.css
-│    └──main.jsx
-├──.env
-├──gitignore
-├──eslint.config.js
-├──index.html
-├──package-lock.jscon
-├──package.json
-├──README.md
-├──vite.config.js
-└── README.md
+│    ├──assests                 #Store static files like images, icons
+│    ├──components/             #components of the ui(reuable)
+│    │    ├── MemeDisplay.jsx   #Main logic for meme display & interaction
+│    ├──App.css                 #Local CSS styles
+│    ├──App.jsx                 #Entry-level React component
+│    ├──index.css               # Global styles for the entire app
+│    └──main.jsx                # main entry point
+├──.env                         #store environment variables as API KEY
+├──gitignore                    #Specifies files and directories Git should ignore
+├──eslint.config.js             #maintain consistent coding standards
+├──index.html                   #single HTML file
+├──package-lock.jscon           #Automatically generated to lock versions
+├──package.json                 #project dependencies, scripts, metadata
+├──README.md                    #Documentation file
+├──vite.config.js               #Useful for customizing build tools, plugins, and aliases
+└── README.md                   #this file
 
 ````
 ---
 
 ## 🧰 Teck Stack
 
-- [React+vite](https://vite.dev/)
-- [TailwindCSS](https://tailwindcss.com/)
-- [MEME API](https://meme-api.com/gimme/)
+- ⚛️ [React+vite](https://vite.dev/) – JS(UI) library
+- 🎨 [TailwindCSS](https://tailwindcss.com/) – for styling
+- 🔗 [MEME API](https://meme-api.com/gimme/) – meme content provider
 ---
+## ScreenShots
 
+---
 ## 🚀 Getting Started
 
 ### 1. Clone the Repo
