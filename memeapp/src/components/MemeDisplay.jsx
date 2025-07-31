@@ -231,6 +231,54 @@ function MemeDisplay() {
                 </button>
             </div>
             
+            
+            <div className="mb-4 flex flex-col md:flex-row gap-8 items-center">
+                {/* Search bar */}
+                <div className="mb-4 flex justify-center">
+                    <input
+                        type="text"
+                        placeholder="🔍Search memes..."
+                        className="p-2 border rounded w-full max-w-md"
+                        value={searchTerm}
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                    />
+                    {/* Button to trigger search */}
+                    <button
+                        onClick={handleSearch}
+                        className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                    >
+                        Search
+                    </button>
+                </div>
+            </div>
+
+
+            {/* Displaying the random meme if available */}
+            {randomMeme && (
+                <div className="bg-yellow-100 border border-yellow-300 p-4 mb-6 rounded">
+                    <h2 className="text-xl font-semibold mb-2"> Random Meme</h2>
+                    {renderMemeCard(randomMeme, 'random')}
+                </div>
+            )}
+
+            {/* loading */}
+            {loading ? (
+                <p className="text-center">Loading memes...</p>
+            ) : (
+                <>
+                    {/* Displaying the memes */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        {filteredMemes.map(renderMemeCard)}
+                    </div>
+                    <div className="flex justify-center mt-6">
+                        {/* Button to load more memes */}
+                        <button
+                            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                            onClick={() => setCount(prev => prev + 10)}
+                        >
+                            Load More
+                        </button>
+                    </div>
                 </>
             )}
         </div>
