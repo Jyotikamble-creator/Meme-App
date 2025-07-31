@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className=' p-6  flex flex-col items-center bg-gray-400'>
-        <h1 className='text-3xl text-white  font-bold  mb-8'> MEME WORLD</h1>
+        <h1 className='text-3xl text-white  font-bold  mb-8'> 😂 MEME WORLD</h1>
         <MemeDisplay />
       </div>
     </>

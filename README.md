@@ -11,3 +11,27 @@ Currently, two official plugins are available:
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 
+# 😂 Meme Generator App
+
+A fun and responsive meme viewer and uploader built with **React**, **Tailwind CSS**, and the [Meme API](https://meme-api.com/).
+
+## ✨ Features
+
+- 🔍 **Search Memes** by title
+- 🎲 **Random Meme** generator
+- 💬 **Add Comments** to each meme
+- ❤️ **Like/Reactions** (❤️ / 🤍 toggle)
+- 📤 **Upload Your Own Memes** using image URLs
+- 💾 **Download Memes**
+- 🔄 **Load More** memes on button click
+- 🎨 **Responsive UI** with TailwindCSS
+
+
+
+## 🚀 Getting Started
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/your-username/meme-generator-app.git
+cd meme-generator-app
