@@ -1,3 +1,8 @@
+
+
+
+
+
 // here the data is fetched from the API and displayed
 // importing the hooks and React state
 import React, { useEffect, useState } from 'react';
@@ -87,6 +92,24 @@ function MemeDisplay() {
         m.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
+    // Function to share a meme
+    const shareMeme = async (meme) => {
+        if (navigator.share) {
+            try {
+                await navigator.share({
+                    title: meme.title,
+                    text: "😂 Check out this meme!",
+                    url: meme.url
+                });
+            } catch (err) {
+                console.error("Share failed:", err);
+            }
+        } else {
+            navigator.clipboard.writeText(meme.url);
+            alert("Link copied to clipboard!");
+        }
+    };
+
     // Function to render(display) each meme card
     const renderMemeCard = (meme, index) => (
         <div className="bg-white p-4 rounded shadow-md" key={index}>
@@ -114,6 +137,14 @@ function MemeDisplay() {
                 >
                     Download
                 </a>
+
+                {/* Share button */}
+                <button
+                    onClick={() => shareMeme(meme)}
+                    className="text-green-600 text-sm hover:underline"
+                >
+                    Share
+                </button>
             </div>
 
             {/* Adding comments */}
