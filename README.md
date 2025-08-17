@@ -65,6 +65,18 @@ A fun, interactive, and responsive meme generator and viewer built with **React*
 ---
 ## 📸 Demo Preview
 
+<img width="1920"  alt="first" src="https://github.com/user-attachments/assets/ca99eaef-1afa-4ef4-84a7-4accc1380971" />
+
+<img width="1920"  alt="layout" src="https://github.com/user-attachments/assets/05bb1723-becb-41e9-b376-6030fbda00b4" />
+
+<img width="1920"  alt="more" src="https://github.com/user-attachments/assets/e1cbce6c-04ff-4e42-8ca8-153c30363958" />
+
+<img width="1920"  alt="random" src="https://github.com/user-attachments/assets/b8fd8fe7-cac3-4acb-a609-f9d37e4a8cee" />
+
+<img width="1920"  alt="all" src="https://github.com/user-attachments/assets/6a53f2c4-89c4-4b1a-93e1-51bb87d6ef5f" />
+
+<img width="1920"  alt="Search" src="https://github.com/user-attachments/assets/bc550e6c-df2c-4a0d-835d-adb742b5d751" />
+
 ---
 ## 🚀 Getting Started
 
