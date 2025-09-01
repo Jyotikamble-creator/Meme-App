@@ -28,6 +28,7 @@ A fun, interactive, and responsive meme generator and viewer built with **React*
 - 📤 **Upload Your Own Memes** using image URLs.
 - ⬇️ **Download Memes** a button is present.
 - 🔄 **Load More** memes on button click.
+- 📲 **Share Memes** where url lonk is generated to share .
 - 🎨 **Responsive UI** with TailwindCSS.
 
 ---
