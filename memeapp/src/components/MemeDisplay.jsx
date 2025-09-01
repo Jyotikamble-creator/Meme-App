@@ -1,8 +1,3 @@
-
-
-
-
-
 // here the data is fetched from the API and displayed
 // importing the hooks and React state
 import React, { useEffect, useState } from 'react';
