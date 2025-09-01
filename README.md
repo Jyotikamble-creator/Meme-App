@@ -76,6 +76,8 @@ A fun, interactive, and responsive meme generator and viewer built with **React*
 
 <img width="1920"  alt="all" src="https://github.com/user-attachments/assets/6a53f2c4-89c4-4b1a-93e1-51bb87d6ef5f" />
 
+<img width="1920"  alt="Share" src="https://github.com/user-attachments/assets/22b40379-19d1-47f6-b6cb-453f6658539c" />
+
 <img width="1920"  alt="Search" src="https://github.com/user-attachments/assets/bc550e6c-df2c-4a0d-835d-adb742b5d751" />
 
 ---
